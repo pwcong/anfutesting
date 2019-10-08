@@ -1,5 +1,7 @@
 $wrapper-max-width: 1200px;
 
+$primary-color: #1e3485;
+
 @mixin wrapper() {
   max-width: 1200px;
   margin: 0 auto;

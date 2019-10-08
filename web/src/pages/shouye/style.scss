@@ -17,12 +17,12 @@
       overflow: hidden;
     }
     &-head {
-      border-left: 4px solid #1e3485;
+      border-left: 4px solid $primary-color;
       padding-left: 12px;
     }
     &-title {
       font-size: 24px;
-      color: #1e3485;
+      color: $primary-color;
 
       &-sub {
         font-size: 14px;
@@ -78,9 +78,9 @@
       display: inline-block;
       padding: 0 32px;
       padding-bottom: 8px;
-      border-bottom: 1px solid #1e3485;
+      border-bottom: 1px solid $primary-color;
       font-size: 24px;
-      color: #1e3485;
+      color: $primary-color;
       position: relative;
       &::after {
         content: '';
@@ -88,7 +88,7 @@
         width: 8px;
         height: 8px;
         border-radius: 4px;
-        background-color: #1e3485;
+        background-color: $primary-color;
         bottom: 0;
         left: 50%;
         transform: translate(-50%, 50%);
@@ -123,7 +123,7 @@
 
       transition: all 0.3s;
       &-active {
-        background-color: #1e3485;
+        background-color: $primary-color;
         &::after {
           position: absolute;
           right: 0;
@@ -132,7 +132,7 @@
           content: '';
           border-top: 12px solid transparent;
           border-bottom: 12px solid transparent;
-          border-left: 12px solid #1e3485;
+          border-left: 12px solid $primary-color;
           box-sizing: border-box;
         }
       }
@@ -158,7 +158,7 @@
           border-bottom: none;
           border-left: 12px solid transparent;
           border-right: 12px solid transparent;
-          border-top: 12px solid #1e3485;
+          border-top: 12px solid $primary-color;
           left: 50%;
           bottom: 0;
           transform: translate(-50%, 100%);
@@ -286,7 +286,7 @@
       padding: 18px;
 
       &-title {
-        color: #1e3485;
+        color: $primary-color;
         font-size: 18px;
       }
       &-content {
@@ -298,13 +298,13 @@
         margin-top: 24px;
         display: inline-block;
         padding: 8px 16px;
-        border: 1px solid #1e3485;
+        border: 1px solid $primary-color;
         font-size: 16px;
-        color: #1e3485;
+        color: $primary-color;
         cursor: pointer;
         transition: all 0.2s;
         &:hover {
-          background-color: #1e3485;
+          background-color: $primary-color;
           color: white;
         }
       }

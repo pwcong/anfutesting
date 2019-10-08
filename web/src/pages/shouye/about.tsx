@@ -34,6 +34,7 @@ const Section: React.FunctionComponent<RouteComponentProps> = props => {
               <div
                 className={`${aboutCls}-right-btn`}
                 onClick={() => {
+                  window.scrollTo(0, 0);
                   props.history.push('/jieshao');
                 }}
               >

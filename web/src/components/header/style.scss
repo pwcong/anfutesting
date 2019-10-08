@@ -40,11 +40,11 @@
         white-space: nowrap;
         transition: all 0.2s;
         &:hover {
-          color: #1e3485;
+          color: $primary-color;
         }
         &.active {
-          color: #1e3485;
-          border-bottom-color: #1e3485;
+          color: $primary-color;
+          border-bottom-color: $primary-color;
         }
       }
     }
@@ -74,7 +74,7 @@
         white-space: nowrap;
         &:hover,
         &.active {
-          color: #1e3485;
+          color: $primary-color;
         }
       }
     }
@@ -108,7 +108,7 @@
         color: #666;
         font-size: 14px;
         &.active {
-          color: #1e3485;
+          color: $primary-color;
         }
       }
       .sub-navs-mobile {
@@ -121,7 +121,7 @@
           color: #999;
           text-decoration: none;
           &.active {
-            color: #1e3485;
+            color: $primary-color;
           }
         }
       }
@@ -167,7 +167,7 @@
         transform: rotate(-90deg);
 
         span {
-          background-color: #1e3485;
+          background-color: $primary-color;
         }
       }
     }

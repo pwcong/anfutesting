@@ -1,23 +1,28 @@
 import React from 'react';
 
+import { withRouter, RouteComponentProps } from 'react-router-dom';
+
 import service1 from '@/assets/imgs/service1.png';
 import service2 from '@/assets/imgs/service2.png';
 import service3 from '@/assets/imgs/service3.png';
 
-export default class Section extends React.PureComponent {
+class Section extends React.PureComponent<RouteComponentProps> {
   render() {
     const services = [
       {
         title: '电气安全检测',
-        img: service1
+        img: service1,
+        to: '/fuwu/dianqi'
       },
       {
         title: '消防设施安全检测',
-        img: service2
+        img: service2,
+        to: '/fuwu/xiaofang'
       },
       {
         title: '防雷设施安全检测',
-        img: service3
+        img: service3,
+        to: '/fuwu/fanglei'
       }
     ];
     const servicesCls = 'services';
@@ -30,7 +35,14 @@ export default class Section extends React.PureComponent {
           </div>
           <div className={`${servicesCls}-list`}>
             {services.map((s, index) => (
-              <div className={`${servicesCls}-item`} key={index}>
+              <div
+                className={`${servicesCls}-item`}
+                key={index}
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  this.props.history.push(s.to);
+                }}
+              >
                 <div
                   className={`${servicesCls}-item-img`}
                   style={{
@@ -46,3 +58,5 @@ export default class Section extends React.PureComponent {
     );
   }
 }
+
+export default withRouter(Section);

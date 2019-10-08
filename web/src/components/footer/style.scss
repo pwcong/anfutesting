@@ -16,11 +16,12 @@
       min-width: 300px;
       flex: 1;
       display: flex;
-      flex-flow: row nowrap;
-      justify-content: flex-end;
+      flex-flow: row wrap;
+      justify-content: center;
     }
     &-col {
-      padding: 0 12px;
+      margin: 0 12px;
+      min-width: 100px;
     }
     &-item {
       font-size: 12px;
@@ -28,10 +29,13 @@
       text-decoration: none;
       color: #ddd;
       margin: 4px 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: center;
       &-title {
         color: white;
         font-size: 14px;
-
       }
     }
   }

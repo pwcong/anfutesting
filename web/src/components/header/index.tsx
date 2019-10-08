@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
+import classnames from 'classnames';
+
 import logo from '@/assets/imgs/logo.jpg';
 import { judgeIsMobile } from '@/utils/screen';
 
@@ -102,9 +104,9 @@ const Header: React.FunctionComponent = () => {
         </div>
         {isMobile ? (
           <div
-            className={['navs-mobile']
-              .concat(expand ? ['navs-mobile-active'] : [])
-              .join(' ')}
+            className={classnames('navs-mobile', {
+              ['navs-mobile-active']: expand
+            })}
           >
             {navs.map((nav, index) => (
               <div key={index} className="nav-mobile">
@@ -176,9 +178,9 @@ const Header: React.FunctionComponent = () => {
 
         {isMobile && (
           <div
-            className={['navs-mobile-expand']
-              .concat(expand ? ['navs-mobile-expand-active'] : [])
-              .join(' ')}
+            className={classnames('navs-mobile-expand', {
+              ['navs-mobile-expand-active']: expand
+            })}
             onClick={() => {
               setExpand(!expand);
             }}
