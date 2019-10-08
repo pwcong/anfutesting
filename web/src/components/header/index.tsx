@@ -91,7 +91,7 @@ const Header: React.FunctionComponent = () => {
       ]
     },
     {
-      title: '关于我们',
+      title: '联系我们',
       to: '/lianxi'
     }
   ];

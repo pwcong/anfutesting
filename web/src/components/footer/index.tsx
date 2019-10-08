@@ -73,7 +73,7 @@ const Footer: React.FunctionComponent<RouteComponentProps> = () => {
     [
       {
         to: '/lianxi',
-        title: '关于我们',
+        title: '联系我们',
         isTitle: true
       }
     ]

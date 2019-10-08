@@ -1,6 +1,6 @@
 @import '@/assets/style/common.scss';
 
-.jieshao {
+.fuwu {
   background-color: #f5f5f5;
   &-wrapper {
     @include wrapper;
@@ -17,12 +17,15 @@
     padding: 24px 32px;
   }
 
-  .qiye,
-  .fengcai {
+  .dianqi,
+  .fanglei,
+  .xiaofang {
     &-title {
       font-size: 24px;
       color: $primary-color;
       text-align: center;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #eee;
     }
     &-content {
       font-size: 14px;
@@ -39,7 +42,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .jieshao {
+  .fuwu {
     &-banner {
       height: 150px;
     }
@@ -47,7 +50,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .jieshao {
+  .fuwu {
     &-banner {
       height: 100px;
     }
