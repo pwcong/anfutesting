@@ -23,6 +23,7 @@
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.9",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "@types/react-router-dom": "^4.3.5",
