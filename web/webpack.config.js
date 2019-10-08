@@ -73,13 +73,12 @@ module.exports = {
   devtool: 'source-map',
   devServer: {
     historyApiFallback: true,
-    port: 3000,
+    port: 4000,
     contentBase: ['./'],
     inline: true,
     publicPath: '/',
     hot: true,
-    disableHostCheck: true,
-    host: '0.0.0.0'
+    disableHostCheck: true
   },
   plugins: [
     new CleanWebpackPlugin(),
