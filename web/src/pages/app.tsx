@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 
 import Header from '../components/header';
 import Footer from '../components/footer';
+import Toolbar from '../components/toolbar';
 
 import ShouYe from './shouye';
 import JieShao from './jieshao';
@@ -28,6 +29,7 @@ const App: React.FunctionComponent = () => {
         <Route path="/lianxi" component={LianXi} />
       </main>
       <Footer />
+      <Toolbar />
     </div>
   );
 };

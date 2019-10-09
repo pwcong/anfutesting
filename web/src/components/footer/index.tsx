@@ -108,9 +108,10 @@ const Footer: React.FunctionComponent<RouteComponentProps> = () => {
       </div>
       <div className="footer-bottom">
         <div className="footer-bottom-wrapper">
-          <div>
+          <div className="footer-bottom-left">
             @2017-{new Date().getFullYear()} 惠州市安富电气消防安全检测有限公司
           </div>
+          <div className="footer-bottom-right"></div>
         </div>
       </div>
     </footer>

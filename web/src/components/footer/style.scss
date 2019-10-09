@@ -40,16 +40,23 @@
     }
   }
   &-bottom {
+    background-color: #333;
     &-wrapper {
       @include wrapper;
       display: flex;
       flex-flow: row nowrap;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       color: white;
       font-size: 12px;
       padding: 18px 0;
     }
-    background-color: #333;
+
+    &-left {
+      
+    }
+    &-right {
+
+    }
   }
 }
