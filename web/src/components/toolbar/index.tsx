@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import classnames from 'classnames';
 
 import qq from '@/assets/imgs/qq_icon.png';
 import qqBtn from '@/assets/imgs/qq_btn.png';
@@ -8,20 +9,39 @@ import hide from '@/assets/imgs/hide_btn.png';
 
 import './style.scss';
 
+let timer: any = null;
+
 const Toolbar: React.FunctionComponent = props => {
+  const [activeKey, setActiveKey] = useState('');
+
+  const show = (key: string) => {
+    setActiveKey(key);
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      setActiveKey('');
+    }, 5000);
+  };
+
   const baseCls = 'toolbar';
+  const itemCls = `${baseCls}-item`;
+
   return (
     <div className={baseCls}>
       <div className={`${baseCls}-list`}>
-        <div className={`${baseCls}-item ${baseCls}-item-qq`}>
+        <div
+          className={classnames(`${itemCls} ${itemCls}-qq`, {
+            [`${itemCls}-active`]: activeKey === 'qq'
+          })}
+          onClick={() => show('qq')}
+        >
           <div
-            className={`${baseCls}-item-icon`}
+            className={`${itemCls}-icon`}
             style={{
               backgroundImage: `url(${qq})`
             }}
           ></div>
-          <div className={`${baseCls}-item-content`}>
-            <div className={`${baseCls}-item-link`}>
+          <div className={`${itemCls}-content`}>
+            <div className={`${itemCls}-link`}>
               <a
                 href="https://wpa.qq.com/msgrd?v=3&uin=598138008&site=qq&menu=yes"
                 target="_blank"
@@ -32,31 +52,41 @@ const Toolbar: React.FunctionComponent = props => {
             </div>
           </div>
         </div>
-        <div className={`${baseCls}-item ${baseCls}-item-tel`}>
+        <div
+          className={classnames(`${itemCls} ${itemCls}-tel`, {
+            [`${itemCls}-active`]: activeKey === 'tel'
+          })}
+          onClick={() => show('tel')}
+        >
           <div
-            className={`${baseCls}-item-icon`}
+            className={`${itemCls}-icon`}
             style={{
               backgroundImage: `url(${tel})`
             }}
           ></div>
-          <div className={`${baseCls}-item-content`}>
-            <div className={`${baseCls}-item-title`}>电话直呼</div>
-            <div className={`${baseCls}-item-link ${baseCls}-item-link-r`}>
+          <div className={`${itemCls}-content`}>
+            <div className={`${itemCls}-title`}>电话直呼</div>
+            <div className={`${itemCls}-link ${itemCls}-link-r`}>
               <a target="_blank" href="tel:13828838681">
                 黎先生：13828838681
               </a>
             </div>
           </div>
         </div>
-        <div className={`${baseCls}-item ${baseCls}-item-mail`}>
+        <div
+          className={classnames(`${itemCls} ${itemCls}-mail`, {
+            [`${itemCls}-active`]: activeKey === 'mail'
+          })}
+          onClick={() => show('mail')}
+        >
           <div
-            className={`${baseCls}-item-icon`}
+            className={`${itemCls}-icon`}
             style={{
               backgroundImage: `url(${mail})`
             }}
           ></div>
-          <div className={`${baseCls}-item-content`}>
-            <div className={`${baseCls}-item-link ${baseCls}-item-link-r`}>
+          <div className={`${itemCls}-content`}>
+            <div className={`${itemCls}-link ${itemCls}-link-r`}>
               <a target="_blank" href="mailto:598138008@qq.com">
                 发送邮件
               </a>

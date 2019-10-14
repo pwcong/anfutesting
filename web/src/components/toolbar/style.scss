@@ -38,6 +38,8 @@
       transition: opacity 0.2s;
     }
 
+    &-active .toolbar-item-content,
+    &:focus .toolbar-item-content,
     &:hover .toolbar-item-content {
       visibility: visible;
       opacity: 1;
