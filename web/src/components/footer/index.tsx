@@ -111,7 +111,9 @@ const Footer: React.FunctionComponent<RouteComponentProps> = () => {
           <div className="footer-bottom-left">
             @2017-{new Date().getFullYear()} 惠州市安富电气消防安全检测有限公司
           </div>
-          <div className="footer-bottom-right"></div>
+          <div className="footer-bottom-right">
+            粤ICP备19135791号-1
+          </div>
         </div>
       </div>
     </footer>

@@ -24,7 +24,7 @@ const Page: React.FunctionComponent<IProps> = props => {
             <div
               className={`${baseCls}-location-left`}
               style={{
-                backgroundImage: `url(https://restapi.amap.com/v3/staticmap?location=114.480437,22.975667&zoom=16&size=450*350&markers=mid,,A:114.480437,22.975667&key=4b6550da95e84a1f7faed4993457d2cf)`
+                backgroundImage: `url(https://restapi.amap.com/v3/staticmap?location=114.480437,22.975667&zoom=16&size=550*450&markers=mid,,A:114.480437,22.975667&key=4b6550da95e84a1f7faed4993457d2cf)`
               }}
             ></div>
             <div className={`${baseCls}-location-right`}>
