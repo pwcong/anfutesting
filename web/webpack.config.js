@@ -85,7 +85,11 @@ module.exports = {
     new HTMLWebpackPlugin({
       title: '安富检测',
       template: 'src/index.ejs',
-      favicon: 'src/favicon.ico'
+      favicon: 'src/favicon.ico',
+      meta: {
+        description: '惠州市安富电气消防安全检测有限公司（简称“AFJT”）是惠州市消防专业领域独立的、权威的第三方检验检服务机构，致力于为客户提供全方位的建筑装饰材料的阻燃性能测试、建筑电气消防安全检测、建筑物的防雷接地装置检测、安全评估、安全标准预案工程服务。',
+        viewport: 'width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no'
+      }
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[hash].css',
