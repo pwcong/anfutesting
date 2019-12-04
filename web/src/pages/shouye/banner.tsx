@@ -3,6 +3,9 @@ import React from 'react';
 import Swiper from 'swiper';
 import 'swiper/css/swiper.min.css';
 
+import banner4 from '@/assets/imgs/banner4.jpg';
+import banner5 from '@/assets/imgs/banner5.jpg';
+import banner6 from '@/assets/imgs/banner6.jpg';
 import banner1 from '@/assets/imgs/banner1.jpg';
 import banner2 from '@/assets/imgs/banner2.jpg';
 import banner3 from '@/assets/imgs/banner3.jpg';
@@ -21,12 +24,15 @@ export default class Section extends React.PureComponent {
       },
       pagination: {
         el: '.swiper-pagination'
+      },
+      autoplay: {
+        delay: 5000
       }
     });
   }
 
   render() {
-    const banners = [banner1, banner2, banner3];
+    const banners = [banner4, banner5, banner6, banner1, banner2, banner3];
     const bannersCls = 'banners';
 
     return (

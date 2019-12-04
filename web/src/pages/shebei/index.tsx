@@ -10,7 +10,7 @@ import {
 
 import Tabs from '@/components/tabs';
 
-import banner from '@/assets/imgs/banner1.jpg';
+import banner from '@/assets/imgs/banner4.jpg';
 import XiaoFang from './xiaofang';
 import DianQi from './dianqi';
 

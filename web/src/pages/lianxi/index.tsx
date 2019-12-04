@@ -1,6 +1,6 @@
 import React from 'react';
 
-import banner from '@/assets/imgs/banner1.jpg';
+import banner from '@/assets/imgs/banner4.jpg';
 
 import './style.scss';
 
