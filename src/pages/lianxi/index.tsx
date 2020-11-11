@@ -42,7 +42,7 @@ const Page: React.FunctionComponent<IProps> = props => {
                 邮箱：598138008@qq.com
               </div>
               <div className={`${baseCls}-location-item`}>
-                网站：www.anfutesting.com
+                网站：www.anfutesting.cn
               </div>
             </div>
           </div>
